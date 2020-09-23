@@ -2,15 +2,15 @@ const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate');
 
 const UserSchema = new mongoose.Schema({
-    title: {
+    username: {
         type: String,
         required: true,
     },
-    description: {
+    password: {
         type: String,
         required: true,
     },
-    url: {
+    passwordConfirm: {
         type: String,
         required: true,
     },
